@@ -111,3 +111,5 @@ iOSInjectionProject/
 wled/Secrets.xcconfig
 
 .idea/
+LLM/
+ORCHESTRATOR_PROMPT.md

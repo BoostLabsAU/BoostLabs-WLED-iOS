@@ -33,6 +33,11 @@ struct Settings: View {
                             Label("WLED Documentation", systemImage: "questionmark.circle")
                         }
                     }
+                    if let repositoryURL = URL(string: "https://github.com/BoostLabsAU/BoostLabs-WLED-iOS") {
+                        Link(destination: repositoryURL) {
+                            Label("BoostLabs WLED Repository", systemImage: "chevron.left.forwardslash.chevron.right")
+                        }
+                    }
                 } header: {
                     Text("About")
                 } footer: {
@@ -40,7 +45,7 @@ struct Settings: View {
                         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
                         let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1.0"
 
-                        Text("Made by Moustachauve")
+                        Text("BoostLabs WLED")
                         Text("Version \(version) (\(bundleVersion))")
                     }
                     .frame(maxWidth: .infinity)
@@ -67,3 +72,4 @@ struct Settings: View {
         showHiddenDevices: .constant(true), showOfflineDevices: .constant(true)
     )
 }
+

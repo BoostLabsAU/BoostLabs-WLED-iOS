@@ -29,7 +29,7 @@
 		882CC9132F05CFE00080567C /* WLEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884FA90A2F027B6100097D56 /* v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v2.xcdatamodel; sourceTree = "<group>"; };
 		884FA90B2F027B6100097D56 /* wled_native_data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wled_native_data.xcdatamodel; sourceTree = "<group>"; };
-		C9A9E5BD2918D1C3005B5C22 /* WLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A9E5BD2918D1C3005B5C22 /* WLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BoostLabs-WLED.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C4B47E2AC0050500791D20 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 				C946FB872B68C53600D5B00D /* DequeModule */,
 				C946FB892B68C53600D5B00D /* OrderedCollections */,
 			);
-			productName = wled;
+			productName = "BoostLabs-WLED";
 			productReference = C9A9E5BD2918D1C3005B5C22 /* WLED.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -259,7 +259,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WLED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WLED";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoostLabs-WLED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoostLabs-WLED";
 			};
 			name = Debug;
 		};
@@ -283,7 +283,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WLED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WLED";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoostLabs-WLED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoostLabs-WLED";
 			};
 			name = Release;
 		};
@@ -424,6 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wled/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BoostLabs WLED";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WLED uses the local network to connect to WLED devices around you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -435,8 +436,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.boostlabs.wled";
+				PRODUCT_NAME = "BoostLabs-WLED";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
@@ -453,6 +454,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wled/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BoostLabs WLED";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WLED uses the local network to connect to WLED devices around you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,8 +466,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.boostlabs.wled";
+				PRODUCT_NAME = "BoostLabs-WLED";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
